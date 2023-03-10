@@ -1,0 +1,82 @@
+img { max-width: 100%; }
+*, *::before, *::after { box-sizing: border-box; margin: 0;}
+
+:root {
+  --primary: hsl(240, 95%, 8%);
+  --accent: hsl(61, 100%, 52%);
+}
+
+body {
+  background-color: var(--primary);
+  color: var(--accent);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header  {
+  white-space: nowrap;
+  overflow: hidden;
+}
+h1 { 
+  /* font-size: 6rem; */
+  font-size: clamp(4rem, 8vw, 6rem);
+  font-family: "gtfxebl";
+
+  animation-name: name-translation;
+  animation-timing-function: linear;
+  animation-duration: 15s;
+  animation-direction: normal;
+  animation-iteration-count: infinite;
+}
+
+@keyframes name-translation {
+  0% { transform: translate(0);}
+  100% { transform: translate(calc(-7.5em));}
+}
+
+h1 > span { padding-right: 1rem; }
+h1 > span:nth-child(odd) {
+  color: var(--primary);
+  text-shadow:
+    1px 0px 1px var(--accent),
+    -1px 0px 1px var(--accent),
+    0 1px 1px var(--accent),
+    0 -1px 1px var(--accent);
+}
+
+.border {
+  border-top: 5px solid var(--accent);
+  border-bottom: 5px solid var(--accent);
+  padding-block: 12px;
+}
+
+h2 { 
+  font-family: "gtfxebo";
+  font-size: clamp(2rem, 4vw , 3rem);
+
+  transform: translate(-100%);
+
+  animation-name: job-translation;
+   animation-timing-function: linear;
+   animation-duration: 55s;
+   animation-direction: reverse;
+   animation-iteration-count: infinite;
+}
+
+@keyframes job-translation {
+  0% { transform: translate(-100%);}
+  100% { transform: translate(calc(-100% - 54em));}
+}
+
+
+h2 > span {
+   padding-right: 12px; 
+ 
+}
+h2 > span:nth-child(even) {
+  color: var(--primary);
+  text-shadow:
+    1px 0px 1px var(--accent),
+    -1px 0px 1px var(--accent),
+    0 1px 1px var(--accent),
+    0 -1px 1px var(--accent);
+}
