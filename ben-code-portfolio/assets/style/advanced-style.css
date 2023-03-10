@@ -71,7 +71,6 @@ footer {
 footer span.mailto {
   width: 25px;
   height: 1rem;
-  background-color: red;
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -81,6 +80,18 @@ footer span.mailto {
     mask-image: url(../images/mailcontact.svg);
 }
 
+footer span:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
 .description-container {
   font-family: 'gtfr';
+}
+
+
+.image-container .paralax.front {
+  width: 50%;
+  aspect-ratio: 1;
+
 }
