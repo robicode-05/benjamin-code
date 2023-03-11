@@ -58,12 +58,13 @@ h2 > span:nth-child(even) {
 
 .content {
   flex-grow: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: row;
 }
 
 .content > * {
   padding-inline: 12px;
+  flex: 1;
 }
 
 .description-container {
@@ -88,4 +89,17 @@ footer {
   height: auto;
   max-width: 80%;
   margin-bottom: -5px;
+}
+
+
+@media (max-width: 52em) {
+  .content {
+    flex-direction: column-reverse;
+  }
+
+  picture {
+    max-width: 60%;
+  }
+  
+  
 }
