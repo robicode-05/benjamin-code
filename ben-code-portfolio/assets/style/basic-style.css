@@ -56,13 +56,13 @@ h2 > span:nth-child(even) {
     0 -1px 1px var(--accent);
 }
 
-header + div {
+.content {
   flex-grow: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-header + div > * {
+.content > * {
   padding-inline: 12px;
 }
 
@@ -73,6 +73,10 @@ header + div > * {
   gap: 2rem;
   padding: 12px 6vw;
   font-size: clamp(.8rem, 2vw , 1rem);
+}
+
+footer {
+  z-index: 2;
 }
 
 .image-container {
