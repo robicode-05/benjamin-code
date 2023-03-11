@@ -66,15 +66,6 @@ header + div > * {
   padding-inline: 12px;
 }
 
-.image-container {
-  display: flex;
-}
-.image-container img {
-  align-self: end;
-  max-height: 90%;
-  max-width: 80%;
-}
-
 .description-container {
   display: flex;
   flex-direction: column;
@@ -82,4 +73,14 @@ header + div > * {
   gap: 2rem;
   padding: 12px 6vw;
   font-size: clamp(.8rem, 2vw , 1rem);
+}
+
+.image-container {
+  display: flex;
+  position: relative;
+}
+.image-container img {
+  align-self: end;
+  max-height: 90%;
+  max-width: 80%;
 }

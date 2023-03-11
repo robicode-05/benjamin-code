@@ -90,8 +90,23 @@ footer span:hover {
 }
 
 
-.image-container .paralax.front {
-  width: 50%;
+.paralax.back {
+  z-index: -1;
+  position: absolute;
+  bottom: 0;
+  width: 25vw;
+  max-height: 80%;
   aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--accent);
+}
 
+.paralax.front {
+  position: absolute;
+  bottom: 5%;
+  right: 50%;
+  width: 3vw;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--accent);
 }
